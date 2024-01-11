@@ -1,0 +1,441 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+height: 8000px !important;
+background-color: #686161 !important;
+}
+/* navbar */
+.navbar{
+position: fixed;
+}
+.logo{
+width: 80px;
+height: 50px;
+border-radius: 50%;
+margin: 0px 20px;
+transition: 1s; 
+}
+.header-opacity{
+opacity: .8 !important;
+}
+.logo:hover{
+transform: scale(1.2,1.2);
+}
+.button-login{
+margin: 0px 8px;
+}
+.navbar-cars{
+border-left: 1px solid red;
+padding: 15px;
+}
+.navbar-cars:hover{
+text-shadow: 2px 2px 10px red, 0 0 25px red, 0 0 5px red;
+}
+.nav-link:hover{
+font-weight: bolder;
+text-shadow: 4px 2px 5px red;
+}
+.nav-link:hover::first-letter{
+font-size: 18px;
+color: red;
+}
+.header-search{
+transition: 1.5s !important;
+}
+.search-nav:hover{
+background-color: rgba(245, 214, 214, 0.9) !important;
+
+}
+.types-car:hover::first-letter{
+font-size: 20px;
+color: red;
+}
+
+/* ////////////////////////////////////////////////navbar */
+/* icons */
+.parent-icons{
+list-style-type: none;
+display: flex;
+flex-direction: column;
+/* align-items: flex-end; */
+margin-top: 100px;
+font-size: 50px;
+margin-right: 10px;
+right: 0;
+position: fixed;  
+z-index: 100;
+}
+.parent-icons li a{
+color: rgb(230, 67, 67);
+}
+.parent-icons li a:hover{
+opacity: .8;
+}
+/* /////////////////////////////////////////////////////////icons */
+/* carsoul**************************** */
+.back-part1{
+margin-left: 210px;
+width: 500px;
+height: 100px;
+padding-top: 10px;  
+background-color: rgba(238, 189, 189, 0.7);
+border-radius: 5px; 
+}
+@media (max-width:567px){
+.back-part1{
+margin-left: 10px;
+width: 300px;
+height: 100px;
+padding-top: 10px;  
+background-color: rgba(238, 189, 189, 0.7);
+border-radius: 5px;
+}
+}
+/* //////////////////////////////carsoul */
+/* card1******************* */
+/* cards1////////////////////// */
+.hover-card1:hover{
+background-color: #e1e5ea !important;
+transition: 1s;
+}
+/* cards2**************** */
+.text-card2{
+text-align: center;
+}
+/* cards************************** */
+/* according */
+.back-accord{
+background-color: rgba(238, 189, 189, 0.7) !important;
+}
+/* /////////////////////////////////////////////////// */
+/* card4*********** */
+.link-press{
+text-decoration: none;
+color: red;
+}
+.link-press:hover{
+color: rgb(192, 48, 48);
+}
+.BTN-COPY:hover {
+background-color:  rgb(226, 81, 81) !important;
+color: black !important;
+}
+/* cards4//////////////////////////////////////////////////// */
+/* image attac///////////////////////////////////////// */
+.container6{
+width: 100%;
+height:350px;
+background-image: url(../images/cars2.jpg);
+background-size: cover;
+background-attachment: fixed;
+/* margin-top: -100px; */
+position: relative;
+}
+.overley-part6{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, .4);
+}
+/* image////////////////////////////////////////////////////////// */
+.animation-types{
+position: relative;
+}
+.type11::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 0%;
+top: 0 ;
+left: 0 ;
+background-color: rgba(223, 173, 173,.5);
+opacity: 0;
+transition: 1.5s;
+}
+.type11:hover::after{
+width: 100%;
+height: 100%;
+opacity: .6;
+}
+.type11::before{
+content: "";
+position: absolute;
+width: 0%;
+height: 0%;
+bottom: 0 ;
+right: 0 ;
+background-color: rgba(223, 173, 173,.5);
+opacity: 0;
+transition: 1.5s;
+}
+.type11:hover::before{
+width: 100%;
+height: 100%;
+opacity: .6;
+}
+/* ///////////////////////////////////////////////////after-thank */
+.shape1{
+width: 350px !important;
+height: 450px !important;
+border-radius: 5px;
+background-image: url(../images/carrr7.jpg);
+transition: 1s;
+background-size: cover;
+position: relative;
+
+}
+.shape1-overley{
+background-color: rgba(0, 0, 0, .4) ;
+position: absolute;
+
+
+}
+.shape1:hover{
+transform: scale(0.9);
+box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.shape1:hover .shape1-hover{
+margin-top: 40px !important;
+transition: 1s;
+}
+@media (max-width:567px){
+.shape1-ph{
+margin-left: 65px !important;
+margin: 20px 0px;
+}
+.shape2{     
+margin-left: 65px !important;
+margin: 20px 0px;
+}
+/* ////////////////////////////////////// */
+
+}
+.container7{
+width: 100%;
+height:350px;
+background-image: url(../images/car.jpg);
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+.overley-part7{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, .4);
+}
+/* ////////////////////////////////////////////////////////after-thank */
+/* news//////////////////////////////////////////////////////////////// */
+.postcard {
+height: 400px;
+flex-wrap: wrap;
+display: flex;
+box-shadow: 0 4px 21px -12px rgb(241, 179, 179);
+border-radius: 10px;
+margin: 0 0 2rem 0;
+overflow: hidden;
+position: relative;
+color: #ffffff;
+box-shadow: -5px 5px 20px 10px rgb(241, 179, 179);
+}
+.postcard.dark {
+background-color: #18151f;
+}
+.postcard.light {
+background-color: #e1e5ea;
+}
+.postcard .t-dark {
+color: #18151f;
+}
+.postcard a {
+color: inherit;
+}
+.postcard h1, .postcard .h1 {
+margin-bottom: 0.5rem;
+font-weight: 500;
+line-height: 1.2;
+}
+.postcard .small {
+font-size: 80%;
+}
+.postcard .postcard__title {
+font-size: 1.75rem;
+}
+.postcard .postcard__img {
+max-height: 180px;
+width: 100%;
+object-fit: cover;
+position: relative;
+}
+.postcard .postcard__img_link {
+display: contents;
+}
+.postcard .postcard__bar {
+width: 50px;
+height: 10px;
+margin: 10px 0;
+border-radius: 5px;
+background-color: #424242;
+transition: width 0.2s ease;
+}
+.postcard .postcard__text {
+padding: 1.5rem;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+.postcard .postcard__preview-txt {
+overflow: hidden;
+text-overflow: ellipsis;
+text-align: justify;
+height: 100%;
+}
+.postcard .postcard__tagbox {
+display: flex;
+flex-flow: row wrap;
+font-size: 14px;
+margin: 20px 0 0 0;
+padding: 0;
+justify-content: center;
+}
+.postcard .postcard__tagbox .tag__item {
+display: inline-block;
+background: rgba(83, 83, 83, 0.4);
+border-radius: 3px;
+padding: 2.5px 10px;
+margin: 0 5px 5px 0;
+cursor: default;
+-webkit-user-select: none;
+user-select: none;
+transition: background-color 0.5s;
+}
+.postcard .postcard__tagbox .tag__item:hover {
+background: rgba(83, 83, 83, 0.8);
+}
+.postcard:before {
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: linear-gradient(-70deg, rgb(241, 179, 179), transparent 30%);
+opacity: 1;
+border-radius: 10px;
+}
+.postcard:hover .postcard__bar {
+width: 100px;
+}
+
+@media screen and (min-width: 796px) {
+.postcard {
+flex-wrap: inherit;
+}
+.postcard .postcard__title {
+font-size: 2rem;
+}
+.postcard .postcard__tagbox {
+justify-content: start;
+}
+.postcard .postcard__img {
+max-width: 300px;
+max-height: 100%;
+transition: transform 0.3s ease;
+}
+.postcard .postcard__text {
+padding: 3rem;
+width: 100%;
+}
+.postcard .media.postcard__text:before {
+content: "";
+position: absolute;
+display: block;
+background: #18151f;
+top: -20%;
+height: 130%;
+width: 55px;
+}
+.postcard:hover .postcard__img {
+transform: scale(1.1);
+}
+.postcard:nth-child(2n+1) {
+flex-direction: row;
+}
+.postcard:nth-child(2n+0) {
+flex-direction: row-reverse;
+}
+.postcard:nth-child(2n+1) .postcard__text::before {
+left: -12px !important;
+transform: rotate(4deg);
+}
+.postcard:nth-child(2n+0) .postcard__text::before {
+right: -12px !important;
+transform: rotate(-4deg);
+}
+}
+@media screen and (min-width: 1024px) {
+.postcard__text {
+padding: 2rem 3.5rem;
+}
+
+.postcard__text:before {
+content: "";
+position: absolute;
+display: block;
+top: -20%;
+height: 130%;
+width: 55px;
+}
+
+.postcard.light .postcard__text:before {
+background: #e1e5ea;
+}
+}
+/* /////////////////////////////////////////////////////////////////news */
+/* ////////////////////////////////////////////joins */
+.shape-join1{
+width:250px !important;
+height: 250px !important;
+border-radius: 10px;
+}
+@media (max-width:567px){
+.join-ph1{
+margin: 10px 0px !important;
+}
+.join-ph2{
+margin: 5px 0px !important;
+}
+.join-ph3{
+margin-top: 10px !important;
+}
+.text-join1{
+margin-left: 20px !important;
+}
+.text-join2{
+margin-left: 40px !important;
+}
+}
+.hover-join{
+transition: .7s;
+}
+.hover-join:hover{
+color: red;
+}
+.hover-footer{
+transition: .7s !important;
+}
+.hover-footer:hover{
+color: red !important;
+}
+.shadow-footer{
+box-shadow: 0px 2px 10px 12px rgb(187, 182, 182);
+}
+/* /////////////////////////////////////////////////////////////// */
+
+
+
+

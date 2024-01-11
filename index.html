@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css.map">
+<title>Project3</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top header-opacity">
+<div class="container-fluid">
+<a href="#"><img class="logo" src="images/pandalogo.jpg" alt="photo"></a>
+<a class="navbar-brand navbar-cars" href="#">Cars</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle col-sm-12" href="#" id="navbarDropdown" role="button"
+data-bs-toggle="dropdown" aria-expanded="false">
+Cars
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+<li><a class="dropdown-item types-car" href="#">BMW</a></li>
+<li><a class="dropdown-item types-car" href="#">Mercedes</a></li>
+<li><a class="dropdown-item types-car" href="#">KIA</a></li>
+<li><a class="dropdown-item types-car" href="#">Ibiza</a></li>
+<li><hr class="dropdown-divider "></li>
+<li><a class="dropdown-item types-car" href="#">Use Cars</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="#" tabindex="-1" aria-disabled="true">About</a>
+</li>
+</ul>
+<form class="d-flex ">
+<input class="form-control me-2 search-nav header-search" type="search" placeholder="Search "
+aria-label="Search">
+<button class="btn btn-outline-danger" type="submit">Search</button>
+<button class="btn btn-outline-danger button-login" type="submit">login</button>
+</form>
+</div>
+</div>
+</nav>
+<!-- ///////////////////////////////////////////navbar -->
+<!-- icons -->
+<ul class="parent-icons">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+
+</ul>
+<!-- carsuol -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="images/bmw2.jpg" class="d-block  w-100" style="height: 585px;" alt="photo">
+<div class="carousel-caption  d-md-block">
+<div class="back-part1 ">
+<h5 class="text-danger">BMW</h5>
+<a class="btn btn-outline-danger " href="#" target="_blank">View this Car</a>
+</div></div>
+</div>
+<div class="carousel-item">
+<img src="images/merc.jpg" class="d-block w-100 " style="height: 585px;" alt="photo">
+<div class="carousel-caption  d-md-block">
+<div class="back-part1">
+<h5 class="text-danger">Mercedes</h5>
+<a class="btn btn-outline-danger " href="#" target="_blank">View this Car</a>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<img src="images/dodge.jpg" class="d-block w-100" style="height: 585px;" alt="photo">
+<div class="carousel-caption  d-md-block">
+<div class="back-part1">
+<h5 class="text-danger">Dodge</h5>
+<a class="btn btn-outline-danger " href="#" target="_blank">View this Car</a>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<img src="images/kia3.jpg" class="d-block w-100" style="height: 585px;" alt="photo">
+<div class="carousel-caption  d-md-block">
+<div class="back-part1">
+<h5 class="text-danger">KIA</h5>
+<a class="btn btn-outline-danger " href="#" target="_blank">View this Car</a>
+</div>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<!-- //////////////////////////////////////carsoul -->
+<!-- cards1////////////////////////////////////////////// -->
+<section class="cards">
+<div class="card p-3  text-white shadow-lg"
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-dark">Welcome</h2>
+<p class="card-text text-dark">A car is a vehicle that has wheels, carries a small number of
+passengers, and is moved by an engine or a motor. Cars are also called automobiles 
+or motor vehicles. Trucks and buses are motor vehicles as well. However,
+trucks and buses are larger than cars, and they carry heavier loads
+</p>
+<a href="#" class="btn btn-light text-danger hover-card1 btn-lg m-auto">Learn more</a>
+</div>
+</div>
+<!-- ////////////////////////////////////////////////cards1 -->
+<hr>
+<!--cards2///////////////////////////////////////////  -->
+<section class="cards">
+<div class="card p-4  text-white shadow-lg "
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-card2 text-dark">Popular Cars in the world</h2>  
+</div>
+</div>
+<!-- cards2////////////////////////////////////// -->
+<!-- according -->
+<div class="accordion accordion-flush  mt-3" id="accordionFlushExample">
+<div class="accordion-item ">
+<h2 class="accordion-header" id="flush-headingOne">
+<button class="accordion-button back-accord collapsed" type="button" data-bs-toggle="collapse" 
+data-bs-target="#flush-collapseOne" aria-expanded="false" 
+aria-controls="flush-collapseOne">
+BMW
+</button>
+</h2>
+<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" 
+data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
+<img src="images/bmw5.jpg" alt="car" width="40" height="40" style="border-radius: 50%;">
+ded to demonstrate  item's accordion body.</div>
+</div>
+</div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="flush-headingTwo">
+<button class="accordion-button back-accord collapsed" type="button" data-bs-toggle="collapse"
+data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+KIA
+</button>
+</h2>
+<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
+<img src="images/kia5.jpg" alt="car" width="40" height="40" style="border-radius: 50%;">
+ded to demonstrlled with some actual content.</div>
+</div>
+</div>
+<div class="accordion-item ">
+<h2 class="accordion-header" id="flush-headingThree">
+<button class="accordion-button  back-accord collapsed" type="button" data-bs-toggle="collapse" 
+data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+Dodge
+</button>
+</h2>
+<div id="flush-collapseThree" class="accordion-collapse collapse" 
+aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+<div class="accordion-body">
+<img src="images/dodge3.jpg" alt="car" width="40" height="40" style="border-radius: 50%;">
+ded ld look in a real-world application.</div>
+</div>
+</div>
+</div>
+<hr>
+<!-- cards3---************************************ -->
+<section class="cards">
+<div class="card p-1  text-white shadow-lg "
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-card2 text-dark">Translate From Arabic To English</h2>  
+</div>
+</div>
+<!-- card3///////////////////////////////////// -->
+<!-- cards4---**************************************** -->
+<div class="card p-3  text-white shadow-lg"
+style=" background-color: rgba(238, 189, 189, 0.7);">
+<div class="card-body">
+<h4 class="card-title text-dark ">ًWrite and Translate 
+<a class="link-press" href="https://translate.google.com.eg/?hl=en"
+target="_blank" rel="noopener">Press Here</a></h4>
+<button
+class="btn btn-light text-danger BTN-COPY 
+shadow-lg "    
+style="font-size: 18px;">
+Copy
+</button>
+<br>
+<textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment"
+placeholder="translate:"
+name="text"></textarea>
+</div>
+</div>
+<hr>
+<!-- /////////////////////////////////////////////// -->
+<section class="cards">
+<div class="card p-1  text-white shadow-lg "
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-card2 text-dark">Translate From Arabic To Frensh</h2>  
+</div>
+</div>
+<!-- /////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////// -->
+<div class="card p-3  text-white shadow-lg"
+style=" background-color: rgba(238, 189, 189, 0.7);">
+<div class="card-body">
+<h4 class="card-title text-dark ">ًWrite and Translate 
+<a class="link-press" href="https://translate.google.com.eg/?hl=en"
+target="_blank" rel="noopener">Press Here</a></h4>
+<button
+class="btn btn-light text-danger BTN-COPY 
+shadow-lg "    
+style="font-size: 18px;">
+Copy
+</button>
+<br>
+<textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment"
+placeholder="translate:"
+name="text"></textarea>
+</div>
+</div>
+<hr>
+<!-- ////////////////////////////////////////////////////////////// -->
+<section class="cards">
+<div class="card p-1  text-white shadow-lg "
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-card2 text-dark">Translate From Arabic To German</h2>  
+</div>
+</div>
+<div class="card p-3  text-white shadow-lg"
+style=" background-color: rgba(238, 189, 189, 0.7);">
+<div class="card-body">
+<h4 class="card-title text-dark ">ًWrite and Translate 
+<a class="link-press" href="https://translate.google.com.eg/?hl=en"
+target="_blank" rel="noopener">Press Here</a></h4>
+<button
+class="btn btn-light text-danger BTN-COPY 
+shadow-lg "    
+style="font-size: 18px;">
+Copy
+</button>
+<br>
+<textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment"
+placeholder="translate:"
+name="text"></textarea>
+</div>
+</div>
+<hr>
+<!-- ////////////////////////////////////////////////////////////////// -->
+<!-- image attachment 1 -->
+<div class="container6"><div class="overley-part6">
+</div>
+</div>
+<!-- image/////////////////////////////////////////////////////////////// -->
+<!-- cards5*////////////////////////////////////////// -->
+<section class="cards">
+<div class="card p-1  text-white shadow-lg "
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-card2 text-dark">POPULAR CARS IN EGYPT</h2>  
+</div>
+</div>
+<!-- cards5////////////////////////////////////////////////////// -->
+<!-- cards-types///////////////////////////////////////// -->
+
+<div class="container-fluid">
+<div class="row justify-content-around pb-5 animation-types ">
+<!-- bmw card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/bmw10.jpg" class="card-img-top shadow w-100" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">BMW</h5>
+<p class="card-text">BMW is a German car</p>
+<button class="btn btn-danger text-light mx-auto d-block ">Know More</button>
+</div>
+</div>
+<!-- /bmw card -->
+<!-- carr card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/carrr8.jpg" class="card-img-top shadow" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">KIA</h5>
+<p class="card-text">Kia makes sporty cars </p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /carr card -->
+<!-- dodge card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/dodge7.jpg" class="card-img-top shadow" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">Dodge</h5>
+<p class="card-text"> Dodge Charger puts muscle car</p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /dodge card -->
+<!-- mercedes card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/mercedes4.jpg" class="card-img-top shadow" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">Mercedes</h5>
+<p class="card-text">Mercrdes is a German car</p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /mercedes card -->
+<!-- opel  card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/opel.jpg" class="card-img-top shadow" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">Opel</h5>
+<p class="card-text">Opel is a German car </p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /opel card -->
+<!-- range card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/range.jpg" class="card-img-top shadow" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">Range Rover</h5>
+<p class="card-text">PEERLESS REFINEMENT AND LUXURY</p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /range card -->
+<!-- ibiza card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/ibiza.jpg" class="card-img-top shadow" alt=" pic"
+style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">Ibiza</h5>
+<p class="card-text">The SEAT Ibiza is a supermini car</p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /ibiza card -->
+<!-- car7 card -->
+<div class="card cardover bg-light text-danger col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow type11"
+style="height: 500px;">
+<input type="image" src="images/carrr7.jpg" class="card-img-top shadow"
+alt=" pic" style="height: 365px;">
+<div class="card-body">
+<h5 class="card-title">Hyundai</h5>
+<p class="card-text">Hyundai is a South Korean automaker</p>
+<button class="btn btn-danger text-light mx-auto d-block">Know More</button>
+</div>
+</div>
+<!-- /car7 card -->
+</div> <!-- /row cards -->
+</div> <!-- /container -->
+</section>
+<!-- ////////////////////////cards-types////////////////////////////////////////// -->
+<!-- img 2 fixed///////////////////////////////////////////////////// -->
+<div class="container7"><div class="overley-part7">
+</div>
+</div>
+<!-- ///////////////////////////////////////////////////////// -->
+<hr>
+<!-- thanks//////////////////////////// -->
+<section class="cards">
+<div class="card p-1  text-white shadow-lg "
+style=" 
+background-color: rgba(228, 166, 166, 0.7);">
+<div class="card-body">
+<h2 class="card-title title text-card2 text-dark">THANKS FOR</h2>  
+</div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////// -->
+<!-- after-thanks//////////////////////////////////////////// -->
+<section class="after-thank">
+<div class="container">
+<div class="row mt-5">
+<div class="shape1 shadow-lg shape1-ph ">
+<h5 class="container mt-4 shape1-hover "><a href="#" class="text-dark" style="text-decoration: none;">
+All thanks and appreciation</a></h5>
+<span class="container shape1-hover"><i class="far fa-clock"></i> October 15, 2020</span>
+<div><img src="images/hyundai.jpg" alt="ph" style="width: 100px; height: 130px; border-radius: 50%;
+margin-top:170px; margin-left: 10px; border: 2px solid red;" ></div>
+<div class="text-light mx-4">Hyundai</div>
+<div class="text-light mx-4">Korean Car</div>
+</div>
+<div class="shape1 mx-lg-4 shadow-lg shape2">
+<h5 class="container mt-4 shape1-hover "><a href="#" class="text-dark" style="text-decoration: none;">
+All thanks and appreciation</a></h5>
+<span class="container shape1-hover"><i class="far fa-clock"></i> October 15, 2020</span>
+<div><img src="images/hyundai.jpg" alt="ph" style="width: 100px; height: 130px; border-radius: 50%;
+margin-top:170px; margin-left: 10px; border: 2px solid red;" ></div>
+<div class="text-light mx-4">Hyundai</div>
+<div class="text-light mx-4">Korean Car</div>
+</div>
+<div class="shape1 shadow-lg shape1-ph">
+<h5 class="container mt-4 shape1-hover "><a href="#" class="text-dark" style="text-decoration: none;">
+All thanks and appreciation</a></h5>
+<span class="container shape1-hover"><i class="far fa-clock"></i> October 15, 2020</span>
+<div><img src="images/hyundai.jpg" alt="ph" style="width: 100px; height: 130px; border-radius: 50%;
+margin-top:170px; margin-left: 10px; border: 2px solid red;" ></div>
+<div class="text-light mx-4">Hyundai</div>
+<div class="text-light mx-4">Korean Car</div>
+</div>
+</div>
+</div>
+</section>
+<!-- /////////////////////////////////////////////after thank -->
+<hr>  
+<!-- news/////////////////////////////////////////////// -->
+<h2 class="text-center">Cars News</h2>
+<div class="container mt-5">
+<article class="postcard d-flex light blue"> <!-- 1st card -->
+<a class="postcard__img_link" href="#">
+<img class="postcard__img" src="images/bmw2.jpg" width="300" height="400" alt="Image Title" />
+</a>
+<div class="postcard__text t-dark">
+<h1 class="postcard__title blue"><a href="#" style="text-decoration: none;">BMW</a></h1>
+<div class="postcard__subtitle small">
+<time datetime="2020-05-25 12:00:00">
+<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+</time>
+</div>
+<div class="postcard__bar"></div>
+<div class="postcard__preview-txt">In 2017, BMW was the world's fourteenth-largest producer
+of motor vehicles, with 2,279,503 vehicles produced and in 2022 the 7th largest by revenue.
+The company has significant motor-sport history
+, especially in touring cars, sports cars, and the Isle of Man TT </div>
+<ul class="postcard__tagbox">
+<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+<li class="tag__item play blue">
+<a href="#" style="text-decoration: none;"><i class="fas fa-play mr-2"></i>Play Episode</a>
+</li>
+</ul>
+</div>
+</article></div>
+<!-- // -->
+<div class="container mt-5">
+
+<article class="postcard d-flex light blue"> <!-- 1st card -->
+<a class="postcard__img_link" href="#">
+<img class="postcard__img" src="images/merc.jpg" width="300" height="400" alt="Image Title" />
+</a>
+<div class="postcard__text t-dark">
+<h1 class="postcard__title blue"><a href="#" style="text-decoration: none;">Mercedes</a></h1>
+<div class="postcard__subtitle small">
+<time datetime="2020-05-25 12:00:00">
+<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+</time>
+</div>
+<div class="postcard__bar"></div>
+<div class="postcard__preview-txt">The charging station is the first of a proposed 2,000 hubs that 
+Mercedes plans on installing worldwide as part of a $1 billion, multiyear plan. But the company isnot
+shouldering the whole cost itself; 50 percent will be covered by MN8 Energy, an offshoot of Goldman
+Sachs Asset Management focused on
+solar power and energy storage.</div>
+<ul class="postcard__tagbox">
+<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+<li class="tag__item play blue">
+<a href="#" style="text-decoration: none;"><i class="fas fa-play mr-2"></i>Play Episode</a>
+</li>
+</ul>
+</div>
+</article></div>
+<!-- // -->
+<div class="container mt-5">
+
+<article class="postcard d-flex light blue"> <!-- 1st card -->
+<a class="postcard__img_link" href="#">
+<img class="postcard__img" src="images/range.jpg" width="300" height="400" alt="Image Title" />
+</a>
+<div class="postcard__text t-dark">
+<h1 class="postcard__title blue"><a href="#" style="text-decoration: none;">Range Rover</a></h1>
+<div class="postcard__subtitle small">
+<time datetime="2020-05-25 12:00:00">
+<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+</time>
+</div>
+<div class="postcard__bar"></div>
+<div class="postcard__preview-txt">The Range Rover is one of those vanishingly rare cars that defies the
+industry’s traditional product cycle. The current model arrived in 2012 and even in these unpredictable
+times it’s still hitting the spot with its high-end client base.
+</div>
+<ul class="postcard__tagbox">
+<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+<li class="tag__item play blue">
+<a href="#" style="text-decoration: none;"><i class="fas fa-play mr-2"></i>Play Episode</a>
+</li>
+</ul>
+</div>
+</article></div>
+<!-- --- -->
+<div class="container mt-5">
+
+<article class="postcard d-flex light blue"> <!-- 1st card -->
+<a class="postcard__img_link" href="#">
+<img class="postcard__img" src="images/dodge.jpg" width="300" height="400" alt="Image Title" />
+</a>
+<div class="postcard__text t-dark">
+<h1 class="postcard__title blue"><a href="#" style="text-decoration: none;">Dodge</a></h1>
+<div class="postcard__subtitle small">
+<time datetime="2020-05-25 12:00:00">
+<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+</time>
+</div>
+<div class="postcard__bar"></div>
+<div class="postcard__preview-txt">Here are the rest of Dodge’s current slogans: Excess drives
+success (2021—present): that excess, in this case of power, from a potent Dodge engine will
+get you where you need to go Domestic. Not Domesticated (2016—present): plays
+with the idea that a Dodge can be both a kid- and grocery-hauler, as well as a monster on the
+track</div>
+<ul class="postcard__tagbox">
+<li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+<li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+<li class="tag__item play blue">
+<a href="#" style="text-decoration: none;"><i class="fas fa-play mr-2"></i>Play Episode</a>
+</li>
+</ul>
+</div>
+</article>
+</div>
+<!-- /news///////////////////////////////////////////////////// -->
+<h2 class="text-center ">Join Us</h2>
+<!-- joins/////// -->
+<div class="container">
+<div class="row justify-content-evenly ">
+<div class="shape-join1 shadow-lg">
+<div class="container mt-3 fs-4 fw-bold text-lg-center text-join1">Subscribe Now</div>
+<a href="#"><img src="images/twitter-1528.png.jpg"
+style="margin: 30px 0px 0px 64px; border-radius: 20px;" width="100" 
+height="100" alt="twi" class="shadow-lg"></a>
+<a href="#" style="text-decoration: none; color: black;">
+<div class="container hover-join mt-3 fs-5 fw-bold text-lg-center text-join2">Go to link</div></a>
+</div>
+<div class="shape-join1 join-ph1 shadow-lg">
+<div class="container mt-3 fs-4 fw-bold text-lg-center text-join2 ">Follow</div>
+<a href="#"><img src="images/whatsapp-jpg.png"
+style="margin: 30px 0px 0px 64px; border-radius: 20px;" width="100" 
+height="100" alt="twi" class="shadow-lg"></a>
+<a href="#" style="text-decoration: none; color: black;">
+<div class="container hover-join mt-3 fs-5 fw-bold text-lg-center text-join2">Go to link</div></a>
+</div>
+<div class="shape-join1 join-ph2 shadow-lg">
+<div class="container mt-3 fs-4 fw-bold text-lg-center text-join1">Like the page</div>
+<a href="#"><img src="images/link.jpg"
+style="margin: 30px 0px 0px 64px; border-radius: 20px;" width="100" 
+height="100" alt="twi" class="shadow-lg"></a>
+<a href="#" style="text-decoration: none; color: black;">
+<div class="container hover-join mt-3 fs-5 fw-bold text-lg-center text-join2">Go to link</div></a>
+</div>
+<div class="shape-join1 join-ph3 shadow-lg">
+<div class="container mt-3 fs-4 fw-bold text-lg-center text-join1">watch vedios</div>
+<a href="#"><img src="images/insta.jpg"
+style="margin: 30px 0px 0px 64px; border-radius: 25px;" width="100" 
+height="100" alt="twi" class="shadow-lg"></a>
+<a href="#" style="text-decoration: none; color: black;">
+<div class="container hover-join mt-3 fs-5 fw-bold text-lg-center text-join2">Go to link</div></a>
+</div>
+</div>
+</div>
+<!-- //////////////////////////////////////////////join us -->
+<!-- footer/////////////////////////////////////////////   -->
+<footer class=" text-light pb-5 bg-dark">
+<div class="container-fluid mt-3">
+<div class="row text-center">
+<div class="col-md-4">
+<hr class=" border-top border-3 border-light ">
+<h5><img src="images/carrr4.jpg" width="90" height="90" alt="good pic" 
+class="logoicon rounded-circle shadow-footer" style="border: 2px solid red ;">
+&nbsp; Good Company</h5>
+<hr class="border-top border-3 border-light my-3">
+<address>
+<p>Tel : 000-000-000</p>
+<p>Address : EGYPT</p>
+<p>Fax : 000-000-000</p>
+</address>
+</div>
+<div class="col-md-4">
+<hr class="border-top border-3 border-light my-3">
+<h5><img src="images/carrr11.jpg" width="90" height="90" alt="good pic"
+class="logoicon rounded-circle shadow-footer " style="border: 2px solid red ;">
+&nbsp; Important links</h5>
+<hr class="border-top border-3 border-light my-3">
+<p><a href="#" style="text-decoration: none;" class="text-danger hover-footer">Visit Us</a></p>
+<p><a href="#" style="text-decoration: none;" class="text-danger  hover-footer">Take alook</a></p>
+<p><a href="#" style="text-decoration: none;" class="text-danger  hover-footer">Your health is more important</a></p>
+</div>
+<div class="col-md-4">
+<hr class="border-top border-3 border-light my-3">
+<h5><img src="images/carrr7.jpg" width="90" height="90" alt="good pic"
+class="logoicon rounded-circle shadow-footer" style="border: 2px solid red ;">
+&nbsp; Vision</h5>
+<hr class="border-top border-3 border-light my-3">
+<p>Serveices for all </p>
+<p>Provide best serveices</p>
+<p>you will be better than before</p>
+</div>
+</div>
+</div>
+<hr class="border-top border-3 border-light my-3">
+<span class="text-center d-block title ">Copyright &copy; 2020 Fares Ahmed Fouad, Good Company. All
+rights</span>
+<hr class="border-top border-3 border-light my-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>
